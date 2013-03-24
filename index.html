@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>index</title>
+		<meta name="author" content="Fahim" />
+		<!-- Date: 2013-03-24 -->
+		<link type="text/css" rel="stylesheet" href="resource/css/style.css"/>
+		<script type="text/javascript" src="lib/com/markdown/markdown.js"></script>
+		<script type="text/javascript" src="lib/com/fahimchowdhury/toolkitMax-v1008-compressed.js"></script>
+		<script type="text/javascript" src="src/book/Book.js"></script>
+		<script type="text/javascript" src="src/data/Model.js"></script>
+		<script type="text/javascript" src="src/loader/DataLoader.js"></script>
+		<script type="text/javascript" src="src/data/HTMLContent.js"></script>
+		<script type="text/javascript" src="src/controller/Controller.js"></script>
+		<script type="text/javascript" src="src/Main.js"></script>
+	</head>
+	<body>
+		<div class="header"><h1>Book Creator: Markdown to HTML</h1></div>
+		<div class="wrapper">
+			
+			<div class="left">
+			<h1>Add a Section with Content</h1>
+			<ul>
+				<li class="title">
+					Section  Title:
+				</li>
+				<li>
+					<input type="text" id="sectionTitle" />
+				</li>
+			</ul>
+			<ul>
+				<li class="title">Markdown Content:</li>
+				<li><textarea id="sectionContent"></textarea></li>
+			</ul>
+			<button id="addButton">add/update Page</button>
+			<button id="htmlButton">get HTML Book</button>
+			<button id="saveButton">save Book</button>
+			<button id="previewButton">preview Book</button>
+			<p>HTML Book</p>
+			<textarea id="htmlContent" disabled="true"></textarea>
+			</div>
+			<div class="right"><h1>Pages</h1>
+				<ul id="pageTitles">
+					
+				</ul>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+	</body>
+</html>
+
